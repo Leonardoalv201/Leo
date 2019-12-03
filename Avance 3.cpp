@@ -1,3 +1,11 @@
+/*
+Leonardo Alvarado Menéndez A01705998
+
+Este prugrama lo subi a github https://github.com/Leonardoalv201/Leo
+
+En este programa ya junte los dos entregados en el avance anterior, más aparte que ahora tiene agregación entre flota y los aviones.
+Nota: Hay ciertos comentarios extra en lo subido a github, pero no afectan en nada al programa.
+*/
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -136,9 +144,9 @@ class Flota
 		Flota(string="");//Constructor de la clase
 		void set_nombre(string nombre);//getters y setters
 		string get_nombre();
-		void get_datos_pasajero(Pasajeros, Pasajeros);
-		void get_datos_carga(Carga, Carga);
-		void get_datos_privado(Privado, Privado);
+		void get_datos_pasajero(Pasajeros, Pasajeros);//Metodo para ver los datos de la clase pasajeros
+		void get_datos_carga(Carga, Carga);//Metodo para ver los datos de la clase carga
+		void get_datos_privado(Privado, Privado);//Metodo para ver los datos de la clase privado
 };
 
 Flota::Flota(string nom)
@@ -282,8 +290,6 @@ int main(){
 					cout << "Nombre de la flota: ";
 					cin >> nom;
 					a1.set_flota(nom);//Se crea el objeto de la flota dentro de el objero aeropuerto
-					//f2=a1.get_flota();//Se iguala el objeto creado en aeropuerto al nuevo objeto para poder manipular sus datos
-					//f2.set_nombre(nom);
 				}
 				if (des_aero==2)
 				{
